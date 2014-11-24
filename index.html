@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <!--
+  Copyright (c) 2013 The Chromium Authors. All rights reserved.
+  Use of this source code is governed by a BSD-style license that can be
+  found in the LICENSE file.
+  -->
+<head>
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <title>Test Nacl Application</title>
+  <script type="text/javascript" src="common.js"></script>
+  <script type ="text/javascript" src="example.js"></script>
+  <link type="text/css" href="css/style.css" rel="stylesheet" />
+</head>
+<body data-name="plugin" data-tools="newlib" data-configs="Release" data-path="{tc}/{config}" data-width="0" data-height="0">
+  <h1>Test Nacl Application</h1>
+  <h2>Status: <code id="statusField">NO-STATUS</code></h2>
+
+  <div>
+	<p class="label">Login</span><input id="inputLogin" class="edit" value=""/><br/>
+	<p class="label">Password</span><input id="inputPassword" class="edit" type="password" value=""/><br/>
+	<p class="label">Domain</span><input id="inputDomain" class="edit" type="text" value=""/><br/>
+	
+	<input id="loginButton" type="button" class="button" value="Connect"/>
+  </div>
+  
+  <div id="listener"></div>
+  <div id="log"></div>
+  
+</body>
+</html>

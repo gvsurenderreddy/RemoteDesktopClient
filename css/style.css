@@ -1,0 +1,131 @@
+@font-face 
+{
+  font-family: arial,sans-serif!important;
+  font-style: normal;
+  font-weight: 400;
+}
+
+body
+{
+    background: -webkit-gradient(radial, center center, 0, center center, 400, from(rgb(254, 254, 254)), to(rgb(239, 239, 239)));
+    font-size: 14px;
+    color: rgb(115, 115, 115);
+    padding: 24px;
+}
+
+body:-webkit-full-screen
+{
+    visibility: hidden;
+}
+
+@-webkit-keyframes fadeOutToRight
+{
+    0%
+    {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+    }
+
+    100%
+    {
+        opacity: 0;
+        -webkit-transform: translateX(400px);
+    }
+}
+
+@-webkit-keyframes fadeInFromLeft
+{
+    0%
+    {
+        opacity: 0;
+        -webkit-transform: translateX(-400px);
+    }
+
+    100%
+    {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes fadeInFromTop
+{
+    0%
+    {
+        opacity: 0;
+        -webkit-transform: translateY(-155px);
+    }
+
+    100%
+    {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes fadeOutToTop
+{
+	0%
+	{
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+	}
+
+	100%
+	{
+		opacity: 0;
+		-webkit-transform: translateY(-155px);
+	}
+}
+
+.columns 
+{
+	display: -webkit-flex;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-flex-direction: row;
+}
+
+.column 
+{
+	-webkit-flex: 1;
+	border-left: 1px solid #ccc;
+	padding: 0 8px;
+}
+
+.edit 
+{
+    border:1px solid #9E9E9E;
+    color: #000000;
+    padding: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 11px;
+    background: #FFF;
+	width: 150px;
+}
+
+.label
+{
+	font-size: 14px;
+	width: 100px;
+}
+
+.button
+{
+	margin: 10px;
+	width: 100px;
+	height: 30px;
+}
+
+#log
+{
+	font-size: 10px;
+	color: black;
+}
+
+
+	
+	
+	
